@@ -13,7 +13,7 @@
 <h3>2) Model architecture</h3>
 <ul>
   <li>The implementation is based on the official Siamese paper</li>
-  <img src = "data/model.png">
+  <img src = "dataset/model.png">
 </ul>
 
 <h3>3)Hyperparameters</h3>
