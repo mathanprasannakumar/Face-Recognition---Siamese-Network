@@ -13,6 +13,14 @@
 <h3>2) Model architecture</h3>
 <ul>
   <li>The implementation is based on the official Siamese paper</li>
+| Layer | Input Size | Filters | Kernel | Maxpooling | Activation Function|
+|---| --- | --- | --- |  ---  | --- |
+|  1 | 105x105. Reshaped from 250x250 to adhere to the paper. | 64 | 10x10 | Yes, Stride of 2 |ReLU
+| 2 | 64 filters of 10x10 | 128 | 7x7 | Yes, Stride of 2 | ReLU |
+| 3 | 128 filters of 7x7 | 128 | 4x4 | Yes, Stride of 2 | ReLU |
+| 4 | 128 filters of 4x4 | 256 | 4x4 | No | ReLU |
+| 5 | 4096x1 Fully connected feature layer with drop out rate of 0.4 (Fraction of the input units to drop) | - | - |No | Sigmoid|
+
   <img src = "./dataset/model.jpeg" >
 </ul>
 
